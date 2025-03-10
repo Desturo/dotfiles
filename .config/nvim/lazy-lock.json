@@ -1,0 +1,5 @@
+{
+  "42-header.nvim": { "branch": "main", "commit": "9e816c72712ac72aa576b18a14a5427578c90ff7" },
+  "cyberdream.nvim": { "branch": "main", "commit": "094e4eb33e7d078cbf2105604a4246092eb8046e" },
+  "lazy.nvim": { "branch": "main", "commit": "6c3bda4aca61a13a9c63f1c1d1b16b9d3be90d7a" }
+}

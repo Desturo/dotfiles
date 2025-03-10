@@ -1,0 +1,34 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    alacritty.toml                                     :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: nschneid <nschneid@student.42heilbronn.de  +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2025/03/10 15:19:06 by nschneid          #+#    #+#              #
+#    Updated: 2025/03/10 15:22:39 by nschneid         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+[general]
+
+import = ["~/.config/alacritty/cyberdream.toml"]
+
+[window]
+
+opacity = 0.7
+blur = true
+
+padding.x = 10
+padding.y = 10
+
+# decorations_theme_variant = "Light" # "Dark"
+
+[font]
+
+normal.family = "EnvyCodeR Nerd Font Mono"
+bold.family = "EnvyCodeR Nerd Font Mono"
+italic.family = "EnvyCodeR Nerd Font Mono"
+bold_italic.family = "EnvyCodeR Nerd Font Mono"
+
+size = 17.0
