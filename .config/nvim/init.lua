@@ -23,7 +23,11 @@ local opt = {
 	tabstop = 4,
 	softtabstop = 4,
 
+
+	colorcolumn = "80",
+
 	list = true,
+	clipboard = "unnamedplus",
 }
 
 for k, v in pairs(opt) do
