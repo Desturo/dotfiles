@@ -37,4 +37,4 @@ for k, v in pairs(opt) do
 	vim.opt[k] = v
 end
 
-vim.opt.listchars = {tab = '>•'}
+vim.opt.listchars = {tab = '>•', trail = '~'}
