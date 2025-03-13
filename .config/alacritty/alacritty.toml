@@ -16,7 +16,7 @@ import = ["~/.config/alacritty/cyberdream.toml"]
 
 [window]
 
-opacity = 0.3
+opacity = 0.65
 blur = true
 
 padding.x = 10
