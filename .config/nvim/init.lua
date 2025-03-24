@@ -10,10 +10,9 @@
 --                                                                            --
 -- ************************************************************************** --
 
-vim.g.mapleader = "<Space>"
+vim.g.mapleader = " "
 require("config.lazy")
 
-vim.cmd("colorscheme cyberdream")
 
 local opt = {
 	number = true,
@@ -30,18 +29,23 @@ local opt = {
 	list = true,
 	clipboard = "unnamedplus",
 	incsearch = true,
-	hlsearch = true
+	hlsearch = true,
+	langmap = "tj,nk,sl",
 }
 
 for k, v in pairs(opt) do
 	vim.opt[k] = v
 end
 
-vim.opt.listchars = {tab = '> ', trail = '~'}
+vim.opt.listchars = { tab = '>•', trail = '~' }
 
 local formatgrp = vim.api.nvim_create_augroup("nvim_42_format", {})
 
 vim.api.nvim_create_autocmd("BufWritePre", {
-  command = "Format",
-  group = formatgrp,
+    group = formatgrp,
+    callback = function()
+        vim.cmd("Format")  -- Runs the formatter.nvim format command before saving
+    end,
 })
+
+
