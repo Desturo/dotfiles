@@ -13,7 +13,6 @@
 vim.g.mapleader = " "
 require("config.lazy")
 
-
 local opt = {
 	number = true,
 	relativenumber = true,
