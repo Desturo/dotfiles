@@ -1,3 +1,4 @@
+---@diagnostic disable: undefined-doc-name
 return {
 	{
 		"nvim-neo-tree/neo-tree.nvim",

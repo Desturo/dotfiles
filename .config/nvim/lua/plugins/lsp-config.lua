@@ -2,7 +2,11 @@ return {
 	{
 		"williamboman/mason.nvim",
 		config = function()
-			require("mason").setup()
+			require("mason").setup({
+				ui = {
+					border = "rounded"
+				}
+			})
 		end
 	},
 	{
@@ -20,6 +24,11 @@ return {
 		"neovim/nvim-lspconfig",
 		config = function()
 			local lspconfig = require("lspconfig")
+			-- Function to configure the hover behavior with a border
+			vim.lsp.handlers["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, {
+				border = "rounded", -- You can use 'single', 'double', 'rounded', or 'solid'
+				fousable = false, -- Set to false if you want the window to not be focusable
+			})
 			lspconfig.lua_ls.setup({})
 			lspconfig.clangd.setup({})
 

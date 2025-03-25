@@ -30,7 +30,7 @@ local opt = {
 	clipboard = "unnamedplus",
 	incsearch = true,
 	hlsearch = true,
-	langmap = "tj,nk,sl",
+	langmap = "tj,jt,nk,kn,sl,ls",
 }
 
 for k, v in pairs(opt) do
@@ -47,5 +47,3 @@ vim.api.nvim_create_autocmd("BufWritePre", {
         vim.cmd("Format")  -- Runs the formatter.nvim format command before saving
     end,
 })
-
-
